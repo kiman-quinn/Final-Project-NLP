@@ -1,0 +1,10 @@
+-hmm model_parameters/rm.cd_semi_1000
+-lm baseline.corpus.lm
+-dict baseline.corpus.dic
+-ctl etc/pizza_devel.fileids
+-adcin yes
+-adchdr 44
+-cepext .wav
+-cepdir wav
+-hyp pizza_devel.hyp
+-outlatdir lat

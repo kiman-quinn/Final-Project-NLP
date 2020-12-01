@@ -1,0 +1,20 @@
+#!/bin/sh
+S2CONTINUOUS=/Users/madelinelittlejohn/Final-Project-NLP/pocketsphinx-0.5/pocketsphinx/inst/bin/pocketsphinx_continuous
+HMM=/Users/madelinelittlejohn/Final-Project-NLP/pocketsphinx-0.5/pocketsphinx/inst/share/pocketsphinx/model/hmm/wsj1
+LM=/Users/madelinelittlejohn/Final-Project-NLP/pocketsphinx-0.5/pocketsphinx/inst/share/pocketsphinx/model/lm/wsj
+LMFILE=/Users/madelinelittlejohn/Final-Project-NLP/pocketsphinx-0.5/pocketsphinx/inst/share/pocketsphinx/model/lm/wsj/wlist5o.3e-7.vp.tg.lm.DMP
+DICT=/Users/madelinelittlejohn/Final-Project-NLP/pocketsphinx-0.5/pocketsphinx/inst/share/pocketsphinx/model/lm/wsj/wlist5o.dic
+
+echo " "
+echo "pocketsphinx_wsj:"
+echo "  Demo CMU PocketSphinx decoder with 5000-word connected dictation."
+echo " "
+
+echo "<executing $S2CONTINUOUS, please wait>"
+$S2CONTINUOUS \
+	-fwdflat no -bestpath no \
+	-lm ${LMFILE} \
+	-dict ${DICT} \
+        -hmm ${HMM} \
+	-samprate 8000 \
+	-nfft 256 $@
