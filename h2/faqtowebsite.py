@@ -7,23 +7,37 @@ kw_map = {
     # 'BC'
     'DINING': ['HOUSING_DINING'],
     'FOOD': ['HOUSING_DINING'],
+    'MEAL': ['HOUSING_DINING'],
     'ADVISING': ['ADVISING'],
-    'JESUIT'
+    # 'JESUIT'
     'MAJOR': ['ADVISING', 'DEPARMENTS'],
+    'ADVISING': ['ADVISING'],
+    'ADVISOR': ['ADVISING'],
     'DEPARTMENT': ['DEPARTMENTS'],
     'HOUSING': ['HOUSING_DINING'],
+    'DORMS': ['HOUSING_DINING'],
+    'DORM': ['HOUSING_DINING'],
+    'CAMPUS': ['HOUSING_DINING'],
+    'LIVE': ['HOUSING_DINING'],
     # 'CLASS SIZE'
     'STUDY': ['DEPARTMENTS', 'OIP'],
+    'RESEARCH': ['DEPARTMENTS'],
     'ABROAD': ['OIP'],
+    'COUNTRY': ['OIP'],
+    'INTERNATIONAL': ['OIP'],
     'CLASSES': ['ADVISING'],
     'CREDITS': ['ADVISING'],
     # 'COST':
     'DORM': ['HOUSING_DINING'],
-    'CLUBS': ['OSI', 'ORGS'],
-    'EXTRACURRICULARS': ['OSI', 'ORGS'],
+    'CLUBS': ['ORGS'],
+    'CLUB': ['ORGS'],
+    'EXTRACURRICULARS': ['ORGS'],
+    'ORGANIZATIONS': ['ORGS'],
     'SERVICE': ['OSI'],
     'SPORTS': ['OSI'],
     'ATHLETICS': ['OSI'],
+    'BAND': ['OSI'],
+    'BANDS': ['OSI'],
 }
 
 ## MAP WEBPAGES TO URLS ##
