@@ -38,4 +38,18 @@ url_map = {
     'HOUSING_DINING': 'https://www.bc.edu/content/bc-web/campus-life/housing-and-dining.html',
 }
 
-#direct to an FAQ website page
+# direct to an FAQ website page
+def get_webpage(sentence):
+    """Takes a sentence as a list of words and returns a URL to a webpage."""
+
+    scores = {k: 0 for k in kw_map} # initialize scores for each webpage to 0
+
+    # for each word in the sentence, add 1 to the associated webpage's score
+    for word in sentence:
+        if word in kw_map:
+            for webpage in kw_map[word]:
+                scores[webpage] += 1
+
+    webpage = max(scores, key=scores.get)   # webpage with the highest score is returned to the user
+
+    return url_map[webpage]
