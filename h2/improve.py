@@ -1,6 +1,5 @@
-#add more sentences to best.corpus
+#add more sentences to faq.corpus
 
-#pseudocode:
 #take 3 start phrases
 start = []
 plus = []
@@ -8,19 +7,18 @@ size = []
 keyword = []
 sentences = []
 
-start.append("I'D LIKE TO ORDER A ")
-start.append("I WANNA ORDER A")
-start.append("I WANT TO ORDER A ")
-start.append("GIVE ME A ")
-
-plus.append(" FOR DELIVERY ")
-plus.append(" FOR PICKUP ")
-
-#followed by size:
-size.append("SMALL")
-size.append("MEDIUM")
-size.append("LARGE")
-size.append("EXTRA LARGE")
+start.append("WHY DID YOU ")
+start.append("WHAT IS ")
+start.append("HOW IS ")
+start.append("WHAT DOES ")
+start.append("WHAT ARE ")
+start.append("IS IT ")
+start.append("HOW DOES ")
+start.append("HOW MANY ")
+start.append("WHAT HAS ")
+start.append("WHO ARE ")
+start.append("ARE THERE ")
+start.append("HOW DO ")
 
 #plus toppings: start w one, iterate through, then keep adding
 
@@ -33,11 +31,10 @@ keyword = ['ADMISSION','APPLY','APPLICATION','FINANCIAL','AID','SCHOLARSHIP','SC
 'COVID','CORONAVIUS','NINETEEN','REOPEN','REOPENING','TEST','TESTING','RESTRICTIONS','DIVERSITY','DIVERSE','AHANA','RACIAL','GENDER']
 
 for i in range(len(start)):
-    for j in range(len(size)):
-        for k in range(len(toppings)):
-            sentences.append('<s> ' + start[i]+ size[j] + ' PIZZA ' + 'WITH ' + keyword[k] + ' </s>')
-            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[0]  + 'WITH ' + keyword[k] + ' </s>')
-            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[1]  + 'WITH ' + keyword[k] + ' </s>')
+    for j in range(len(keyword)):
+            sentences.append('<s> ' + start[i]+ keyword[j] + ' </s>')
+            sentences.append('<s> ' + start[i]+ keyword[j] + ' </s>')
+            sentences.append('<s> ' + start[i]+ keyword[j] + ' </s>')
 
 
 #add list to corpus
