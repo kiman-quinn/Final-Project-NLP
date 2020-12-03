@@ -25,7 +25,7 @@ kw_map = {
     'RESTAURANT': ['HOUSING_DINING'],
     'HALL': ['HOUSING_DINING'],
     'HALLS': ['HOUSING_DINING'],
-    'MAJOR': ['ADVISING', 'DEPARMENTS'],
+    'MAJOR': ['ADVISING', 'DEPARTMENTS'],
     'MINOR': ['ADVISING', 'DEPARTMENTS'],
     'DOUBLE': ['ADVISING'],
     'ADVISING': ['ADVISING'],
@@ -112,7 +112,7 @@ url_map = {
 def get_webpage(sentence_string):
     """Takes a sentence as a string and returns a URL to a webpage."""
     sentence = sentence_string.split(' ')   # tokenize sentence
-    scores = {k: 0 for k in kw_map} # initialize scores for each webpage to 0
+    scores = {k: 0 for k in url_map} # initialize scores for each webpage to 0
 
     # for each word in the sentence, add 1 to the associated webpage's score
     for word in sentence:
