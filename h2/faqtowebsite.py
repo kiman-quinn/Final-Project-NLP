@@ -108,9 +108,9 @@ url_map = {
 }
 
 # direct to an FAQ website page
-def get_webpage(sentence):
-    """Takes a sentence as a list of words and returns a URL to a webpage."""
-
+def get_webpage(sentence_string):
+    """Takes a sentence as a string and returns a URL to a webpage."""
+    sentence = sentence_string.split(' ')   # tokenize sentence
     scores = {k: 0 for k in kw_map} # initialize scores for each webpage to 0
 
     # for each word in the sentence, add 1 to the associated webpage's score
