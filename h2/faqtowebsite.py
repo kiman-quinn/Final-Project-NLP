@@ -12,7 +12,7 @@ kw_map = {
     'COST': ['ADMISSION'],
     'PRICE': ['ADMISSION'],
     'AFFORD': ['ADMISSION'],
-    'ADDORDABLE': ['ADMISSION'],
+    'AFFORDABLE': ['ADMISSION'],
     'AFFORDABILITY': ['ADMISSION'],
     'TUITION': ['ADMISSION'],
     'EXPENSIVE': ['ADMISSION'],

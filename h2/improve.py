@@ -5,7 +5,7 @@
 start = []
 plus = []
 size = []
-toppings = []
+keyword = []
 sentences = []
 
 start.append("I'D LIKE TO ORDER A ")
@@ -24,24 +24,79 @@ size.append("EXTRA LARGE")
 
 #plus toppings: start w one, iterate through, then keep adding
 
-toppings = ['EXTRA CHEESE', 'MUSHROOMS','MUSHROOM', 'ONIONS','ONION', 'BLACK OLIVES',
-'GREEN OLIVES', 'PINEAPPLE', 'GREEN PEPPERS', 'PEPPERS','PEPPER', 'HOT PEPPERS', 'BROCCOLI', 'TOMATOES', 'TOMATO',
-'SPINACH', 'ANCHOVIES', 'SAUSAGE', 'PEPPERONI', 'HAM', 'BACON']
+keyword = ['ADMISSION','APPLY','APPLICATION','FINANCIAL','AID','SCHOLARSHIP','SCHOLARSHIPS','COST','PRICE','AFFORD','AFFORDABLE',
+'AFFORDABILITY',
+'TUITION',
+'EXPENSIVE',
+'TRANSFER',
+'TRANSFERS',
+'DINING',
+'EAT',
+'FOOD',
+'MEAL',
+'RESTAURANT',
+'HALL',
+'HALLS',
+'MAJOR',
+'MINOR',
+'DOUBLE',
+'ADVISING',
+'ADVISOR',
+'ADVISING',
+'CLASSES',
+'CLASS',
+'REGISTER',
+'REGISTRATION',
+'CREDITS',
+'SCHOOL',
+'SCHOOLS',
+'AP',
+'CREDIT',
+'DEPARTMENT',
+'DEPARTMENTS',
+'HOUSING',
+'DORMS',
+'DORM',
+'CAMPUS',
+'LIVE',
+'ROOMMATE',
+'ROOMMATES',
+'RESIDENCE',
+'APARTMENT',
+'APAREMENTS',
+'NEWTON',
+'STUDY',
+'RESEARCH',
+'ABROAD',
+'COUNTRY',
+'INTERNATIONAL',
+'DORM',
+'CLUBS',
+'CLUB',
+'EXTRACURRICULARS',
+'ORGANIZATIONS',
+'SERVICE',
+'SPORTS',
+'SPORT',
+'TEAM',
+'INTRAMURAL',
+'INTRAMURALS',
+'RECREATION',
+'FITNESS',
+'GYM',
+'GYMS',
+'ATHLETICS',
+'ART',
+'ARTS','BAND','BANDS',
+'COVID','CORONAVIUS','NINETEEN','REOPEN','REOPENING','TEST','TESTING','RESTRICTIONS','DIVERSITY','DIVERSE','AHANA','RACIAL','GENDER']
 
 for i in range(len(start)):
     for j in range(len(size)):
         for k in range(len(toppings)):
-            sentences.append('<s> ' + start[i]+ size[j] + ' PIZZA ' + 'WITH ' + toppings[k] + ' </s>')
-            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[0]  + 'WITH ' + toppings[k] + ' </s>')
-            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[1]  + 'WITH ' + toppings[k] + ' </s>')
+            sentences.append('<s> ' + start[i]+ size[j] + ' PIZZA ' + 'WITH ' + keyword[k] + ' </s>')
+            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[0]  + 'WITH ' + keyword[k] + ' </s>')
+            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[1]  + 'WITH ' + keyword[k] + ' </s>')
 
-
-for i in range(len(start)):
-    for j in range(len(size)):
-        for k in range(len(toppings)-1):
-            sentences.append('<s> ' + start[i]+ size[j] + ' PIZZA ' + 'WITH ' + toppings[k] + ' AND ' + toppings[k+1] + ' </s>')
-            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[0] + 'WITH ' + toppings[k] + ' AND ' + toppings[k+1] + ' </s>')
-            sentences.append('<s> ' + start[i] + size[j] + ' PIZZA' + plus[1] + 'WITH ' + toppings[k] + ' AND ' + toppings[k+1] + ' </s>')
 
 #add list to corpus
 outF = open("faq.corpus", "w")
