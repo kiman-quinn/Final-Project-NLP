@@ -95,6 +95,7 @@ kw_map = {
 
 ## MAP WEBPAGES TO URLS ##
 url_map = {
+    'ABOUT': 'https://www.bc.edu/content/bc-web/about.html',
     'ADMISSION': 'https://www.bc.edu/content/bc-web/admission.html',
     'DIVERSITY': 'https://www.bc.edu/content/bc-web/campus-life/diversity.html',
     'DEPARTMENTS': 'https://www.bc.edu/bc-web/schools/mcas/department-list.html',
@@ -119,7 +120,10 @@ def get_webpage(sentence_string):
             for webpage in kw_map[word]:
                 scores[webpage] += 1
 
-    webpage = max(scores, key=scores.get)   # webpage with the highest score is returned to the user
+    if sum(scores.values()) == 0:   # no hits: go to about page
+        webpage = 'ABOUT'
+    else:
+        webpage = max(scores, key=scores.get)   # webpage with the highest score is returned to the user
 
     return webpage, url_map[webpage]
 
@@ -133,6 +137,7 @@ def parse_sentences():
             wavfile = ls[1].split(' ')[0]
             webpage, url = get_webpage(question)    # get webpage and url
             wf.write(f'{wavfile}\t{webpage}\t{url}\n')  # print to file
+    print('URLs written to webpages.txt')
 
 if __name__ == "__main__":
     parse_sentences()
