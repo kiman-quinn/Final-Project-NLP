@@ -3,7 +3,6 @@
 #take 3 start phrases
 start = []
 plus = []
-size = []
 keyword = []
 sentences = []
 
@@ -19,6 +18,11 @@ start.append("WHAT HAS ")
 start.append("WHO ARE ")
 start.append("ARE THERE ")
 start.append("HOW DO ")
+
+plus.append("HOW DO ")
+plus.append("HOW DO ")
+plus.append("HOW DO ")
+
 
 #plus toppings: start w one, iterate through, then keep adding
 
