@@ -1,1 +1,9 @@
-ml_01	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
+kr_Q1	TRANSFER	https://www.bc.edu/bc-web/admission/apply/transfer.html
+kr_Q2	ABOUT	https://www.bc.edu/content/bc-web/about.html
+kr_Q3	DEPARTMENTS	https://www.bc.edu/bc-web/schools/mcas/department-list.html
+kr_Q4	ABOUT	https://www.bc.edu/content/bc-web/about.html
+kr_Q5	DEPARTMENTS	https://www.bc.edu/bc-web/schools/mcas/department-list.html
+kr_Q6	ADVISING	https://www.bc.edu/bc-web/schools/mcas/undergraduate/advising.html
+kr_Q7	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
+kr_Q8	ADVISING	https://www.bc.edu/bc-web/schools/mcas/undergraduate/advising.html
+kr_Q9	OIP	https://www.bc.edu/bc-web/offices/office-of-international-programs/semester-abroad/programs.html
