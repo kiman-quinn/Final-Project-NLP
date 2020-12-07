@@ -15,7 +15,7 @@ kq013	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
 kq014	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
 kq015	ABOUT	https://www.bc.edu/content/bc-web/about.html
 kr_Q1	TRANSFER	https://www.bc.edu/bc-web/admission/apply/transfer.html
-kr_Q2	ABOUT	https://www.bc.edu/content/bc-web/about.html
+kr_Q2	HOUSING_DINING	https://www.bc.edu/content/bc-web/campus-life/housing-and-dining.html
 kr_Q3	DIVERSITY	https://www.bc.edu/content/bc-web/campus-life/diversity.html
 kr_Q4	ABOUT	https://www.bc.edu/content/bc-web/about.html
 kr_Q5	DEPARTMENTS	https://www.bc.edu/bc-web/schools/mcas/department-list.html
@@ -42,7 +42,7 @@ kq_extra006	ADVISING	https://www.bc.edu/bc-web/schools/mcas/undergraduate/advisi
 kq_extra007	ABOUT	https://www.bc.edu/content/bc-web/about.html
 kq_extra008	REC	https://www.bc.edu/content/bc-web/campus-life/sports-and-recreation.html
 kq_extra009	OIP	https://www.bc.edu/bc-web/offices/office-of-international-programs/semester-abroad/programs.html
-kq_extra010	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
+kq_extra010	ADVISING	https://www.bc.edu/bc-web/schools/mcas/undergraduate/advising.html
 kq_extra011	HOUSING_DINING	https://www.bc.edu/content/bc-web/campus-life/housing-and-dining.html
 kq_extra012	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
 kq_extra013	ORGS	https://www.bc.edu/content/bc-web/offices/student-affairs/sites/student-involvement/student-organizations.html
@@ -53,7 +53,7 @@ kq_extra017	ORGS	https://www.bc.edu/content/bc-web/offices/student-affairs/sites
 kq_extra018	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
 kq_extra019	ADMISSION	https://www.bc.edu/content/bc-web/admission.html
 kq_extra020	ABOUT	https://www.bc.edu/content/bc-web/about.html
-asp_001	DEPARTMENTS	https://www.bc.edu/bc-web/schools/mcas/department-list.html
+asp_001	TRANSFER	https://www.bc.edu/bc-web/admission/apply/transfer.html
 asp_002	ABOUT	https://www.bc.edu/content/bc-web/about.html
 asp_003	DIVERSITY	https://www.bc.edu/content/bc-web/campus-life/diversity.html
 asp_004	ABOUT	https://www.bc.edu/content/bc-web/about.html
@@ -72,3 +72,7 @@ asp_016	ABOUT	https://www.bc.edu/content/bc-web/about.html
 asp_017	ORGS	https://www.bc.edu/content/bc-web/offices/student-affairs/sites/student-involvement/student-organizations.html
 asp_018	REC	https://www.bc.edu/content/bc-web/campus-life/sports-and-recreation.html
 asp_019	ABOUT	https://www.bc.edu/content/bc-web/about.html
+test001	HOUSING_DINING	https://www.bc.edu/content/bc-web/campus-life/housing-and-dining.html
+test002	HOUSING_DINING	https://www.bc.edu/content/bc-web/campus-life/housing-and-dining.html
+test003	HOUSING_DINING	https://www.bc.edu/content/bc-web/campus-life/housing-and-dining.html
+test004	ABOUT	https://www.bc.edu/content/bc-web/about.html
